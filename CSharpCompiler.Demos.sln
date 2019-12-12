@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.Invali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.StringMemory", "src\CSharpCompiler.Demos.StringMemory\CSharpCompiler.Demos.StringMemory.csproj", "{3E9C377F-7E0F-426D-ADCB-63185F94585A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.This", "src\CSharpCompiler.Demos.This\CSharpCompiler.Demos.This.csproj", "{954263C5-5116-4F09-9273-DCCAD25C1ACF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3E9C377F-7E0F-426D-ADCB-63185F94585A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E9C377F-7E0F-426D-ADCB-63185F94585A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E9C377F-7E0F-426D-ADCB-63185F94585A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{954263C5-5116-4F09-9273-DCCAD25C1ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954263C5-5116-4F09-9273-DCCAD25C1ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954263C5-5116-4F09-9273-DCCAD25C1ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954263C5-5116-4F09-9273-DCCAD25C1ACF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
