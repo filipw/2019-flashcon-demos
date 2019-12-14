@@ -18,23 +18,23 @@ namespace CSharpCompiler.Demos.InvalidCastAndIL
             Console.WriteLine(stringOverload.Invoke(null, null));
 
             // cast to anything
-            var monkey = new Monkey() { Name = "Filip" };
-            Console.WriteLine(monkey.Name);
-            monkey.SayHi();
-
-            var human = Screw.It<Human>(monkey);
+            var human = new Human() { Name = "Filip" };
             Console.WriteLine(human.Name);
             human.SayHi();
+
+            var oven = Screw.It<Oven>(human);
+            Console.WriteLine(oven.Name);
+            oven.SayHi();
         }
     }
 
-    public class Monkey
+    public class Oven
     {
         public string Name { get; set; }
 
         public void SayHi()
         {
-            Console.WriteLine($"I'm a monkey {Name}");
+            Console.WriteLine($"I'm an oven {Name}");
         }
     }
 
