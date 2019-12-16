@@ -10,8 +10,6 @@ namespace CSharpCompiler.Demos.NoConstructor
         {
             var dog = new Dog("Minnie");
             dog.Bark();
-
-            Console.ReadLine();
         }
 
         #region weird

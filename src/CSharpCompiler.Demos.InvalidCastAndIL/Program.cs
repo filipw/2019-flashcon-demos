@@ -9,6 +9,12 @@ namespace CSharpCompiler.Demos.InvalidCastAndIL
     {
         static void Main(string[] args)
         {
+            StrangeOverloads();
+            CastToAnything();
+        }
+
+        private static void StrangeOverloads()
+        {
             // overloading by return type
             //Console.WriteLine(Hello.World());
 
@@ -16,14 +22,15 @@ namespace CSharpCompiler.Demos.InvalidCastAndIL
             var stringOverload = typeof(Hello).GetMethods(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static).First(m => m.Name == "World" && m.ReturnType == typeof(string));
             Console.WriteLine(intOverload.Invoke(null, null));
             Console.WriteLine(stringOverload.Invoke(null, null));
+        }
 
+        private static void CastToAnything()
+        {
             // cast to anything
             var human = new Human() { Name = "Filip" };
-            Console.WriteLine(human.Name);
             human.SayHi();
 
             var oven = Screw.It<Oven>(human);
-            Console.WriteLine(oven.Name);
             oven.SayHi();
         }
     }
@@ -32,19 +39,17 @@ namespace CSharpCompiler.Demos.InvalidCastAndIL
     {
         public string Name { get; set; }
 
-        public void SayHi()
-        {
-            Console.WriteLine($"I'm an oven {Name}");
-        }
+        public void SayHi() => Console.WriteLine($"I'm an oven {Name}");
+
+        public void Bake() => Console.WriteLine("I'm baking");
     }
 
     public class Human
     {
         public string Name { get; set; }
 
-        public void SayHi()
-        {
-            Console.WriteLine($"I'm a human {Name}");
-        }
+        public void SayHi() => Console.WriteLine($"I'm a human {Name}");
+        
+        public void BeADouchebag() => Console.WriteLine("VOTE TRUMP");
     }
 }

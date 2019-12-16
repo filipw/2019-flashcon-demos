@@ -8,15 +8,11 @@ namespace CSharpCompiler.Demos.This
     {
         static void Main(string[] args)
         {
-            Message msg = new Message();
+            Message msg = null;
             msg.Print();
-
-            Console.ReadLine();
-
-            Ooops();
         }
 
-        private static void Ooops()
+        private static void DoSomethingWeird()
         {
             Message msg2 = null;
             var printer = (Action<Message>)typeof(Message).GetMethod("Print").CreateDelegate(typeof(Action<Message>));

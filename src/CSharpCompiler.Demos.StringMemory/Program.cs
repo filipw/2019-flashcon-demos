@@ -10,7 +10,7 @@ namespace CSharpCompiler.Demos.StringMemory
             //// unsafe write
             var text = "Minnie";
             Console.WriteLine(text);
-            Console.ReadKey();
+            Console.ReadLine();
 
             var span = MemoryMarshal.AsMemory(text.AsMemory()).Span;
             var hacked = new char[] { 'h', 'a', 'c', 'k', 'e', 'd' };
@@ -20,7 +20,7 @@ namespace CSharpCompiler.Demos.StringMemory
             }
 
             Console.WriteLine(text);
-            Console.ReadKey();
+            Console.ReadLine();
 
             var minnie = new Dog("Minnie");
             minnie.Bark();

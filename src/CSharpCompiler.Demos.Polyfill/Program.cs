@@ -15,8 +15,8 @@ namespace CSharpCompiler.Demos.Polyfill
             var message1 = $"Price of house is {housePrice}CHF.";
             Console.WriteLine(message1);
 
-            IFormattable message2 = $"Price of house is {housePrice:N3}CHF.";
-            Console.WriteLine(message2);
+            //IFormattable message2 = $"Price of house is {housePrice:N3}CHF.";
+            //Console.WriteLine(message2);
 
             Console.ReadLine();
         }
