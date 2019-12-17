@@ -7,7 +7,7 @@
 
 .module SampleIL.dll
 
-.class public abstract auto ansi sealed beforefieldinit SampleIL.Screw
+.class public abstract auto ansi sealed beforefieldinit SampleIL.Fuck
   extends [CORE_ASSEMBLY]System.Object
 {
   .method public hidebysig static !!T It<class T>(object o) cil managed aggressiveinlining

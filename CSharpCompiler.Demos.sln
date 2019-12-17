@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.Finall
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.StructLayout", "src\CSharpCompiler.Demos.StructLayout\CSharpCompiler.Demos.StructLayout.csproj", "{43726486-6B04-4A13-B874-29596B8D0BAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.InvalidCastAndIL", "src\CSharpCompiler.Demos.InvalidCastAndIL\CSharpCompiler.Demos.InvalidCastAndIL.csproj", "{9FC17966-52D1-415D-86A2-540AA77A43E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.InvalidCastAndIL", "src\CSharpCompiler.Demos.InvalidCastAndIL\CSharpCompiler.Demos.InvalidCastAndIL.csproj", "{9FC17966-52D1-415D-86A2-540AA77A43E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.StringMemory", "src\CSharpCompiler.Demos.StringMemory\CSharpCompiler.Demos.StringMemory.csproj", "{3E9C377F-7E0F-426D-ADCB-63185F94585A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.StringMemory", "src\CSharpCompiler.Demos.StringMemory\CSharpCompiler.Demos.StringMemory.csproj", "{3E9C377F-7E0F-426D-ADCB-63185F94585A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.This", "src\CSharpCompiler.Demos.This\CSharpCompiler.Demos.This.csproj", "{954263C5-5116-4F09-9273-DCCAD25C1ACF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpCompiler.Demos.This", "src\CSharpCompiler.Demos.This\CSharpCompiler.Demos.This.csproj", "{954263C5-5116-4F09-9273-DCCAD25C1ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCompiler.Demos.Async", "src\CSharpCompiler.Demos.Async\CSharpCompiler.Demos.Async.csproj", "{AFDC5454-EE4B-415A-B23E-B2E7128D8C38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{954263C5-5116-4F09-9273-DCCAD25C1ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{954263C5-5116-4F09-9273-DCCAD25C1ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{954263C5-5116-4F09-9273-DCCAD25C1ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDC5454-EE4B-415A-B23E-B2E7128D8C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDC5454-EE4B-415A-B23E-B2E7128D8C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDC5454-EE4B-415A-B23E-B2E7128D8C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDC5454-EE4B-415A-B23E-B2E7128D8C38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -30,7 +30,7 @@ namespace CSharpCompiler.Demos.InvalidCastAndIL
             var human = new Human() { Name = "Filip" };
             human.SayHi();
 
-            var oven = Screw.It<Oven>(human);
+            var oven = Fuck.It<Oven>(human);
             oven.SayHi();
         }
     }
