@@ -10,7 +10,7 @@ namespace CSharpCompiler.Demos.InvalidCastAndIL
         static void Main(string[] args)
         {
             StrangeOverloads();
-            CastToAnything();
+            //CastToAnything();
         }
 
         private static void StrangeOverloads()
@@ -29,9 +29,13 @@ namespace CSharpCompiler.Demos.InvalidCastAndIL
             // cast to anything
             var human = new Human() { Name = "Filip" };
             human.SayHi();
+            human.BeADouchebag();
+
+            Console.ReadLine();
 
             var oven = Fuck.It<Oven>(human);
             oven.SayHi();
+            oven.Bake();
         }
     }
 
@@ -41,7 +45,7 @@ namespace CSharpCompiler.Demos.InvalidCastAndIL
 
         public void SayHi() => Console.WriteLine($"I'm an oven {Name}");
 
-        public void Bake() => Console.WriteLine("I'm baking");
+        public void Bake() => Console.WriteLine($"I'm a baking {Name}");
     }
 
     public class Human
